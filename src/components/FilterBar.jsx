@@ -1,7 +1,7 @@
 import './FilterBar.css'
 
 function FilterBar({ selectedType, sortBy, onFilter, onSort }) {
-  const vehicleTypes = ['All', 'Electric', 'Sedan', 'Sports Car', 'SUV']
+  const vehicleTypes = ['All', 'Hatchback', 'Sedan']
   const sortOptions = [
     { value: 'name', label: 'Name' },
     { value: 'price', label: 'Price' },
