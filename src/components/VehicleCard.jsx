@@ -43,12 +43,18 @@ function VehicleCard({ vehicle }) {
         </div>
         
         <div className="vehicle-specs">
-          {Object.entries(vehicle.specs).map(([key, value]) => (
-            <div key={key} className="spec-item">
-              <span className="spec-label">{key}:</span>
-              <span className="spec-value">{value}</span>
+            <div className="spec-item">
+              <span className="spec-label">Engine:</span>
+              <span className="spec-value">{vehicle.spec.engine}</span>
             </div>
-          ))}
+            <div className="spec-item">
+              <span className="spec-label">Mileage:</span>
+              <span className="spec-value">{vehicle.spec.mileage}</span>
+            </div>
+            <div className="spec-item">
+              <span className="spec-label">Fuel Type:</span>
+              <span className="spec-value">{vehicle.spec.fuelType}</span>
+            </div>
         </div>
         
         <button className="view-details-btn">
